@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>yii2-unit-test | record</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="测试文档 在项目目录执行 生成测试1vendor&#x2F;bin&#x2F;codecept generate:test unit models&#x2F;KnowledgeModelTest -c frontend  执行测试12vendor&#x2F;bin&#x2F;codecept run unit models&#x2F;KnowledgeModelTest -c frontendvendor&#x2F;bin&#x2F;codecept run unit mod">
+<meta property="og:type" content="article">
+<meta property="og:title" content="yii2-unit-test">
+<meta property="og:url" content="https://chen152009.github.io/2022/04/08/yii2-unit-test/index.html">
+<meta property="og:site_name" content="record">
+<meta property="og:description" content="测试文档 在项目目录执行 生成测试1vendor&#x2F;bin&#x2F;codecept generate:test unit models&#x2F;KnowledgeModelTest -c frontend  执行测试12vendor&#x2F;bin&#x2F;codecept run unit models&#x2F;KnowledgeModelTest -c frontendvendor&#x2F;bin&#x2F;codecept run unit mod">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-08T07:29:29.000Z">
+<meta property="article:modified_time" content="2022-04-08T07:43:56.591Z">
+<meta property="article:author" content="lgf">
+<meta property="article:tag" content="Yii2">
+<meta property="article:tag" content="phpUnit">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="record" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.1.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">record</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://chen152009.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-yii2-unit-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/08/yii2-unit-test/" class="article-date">
+  <time class="dt-published" datetime="2022-04-08T07:29:29.000Z" itemprop="datePublished">2022-04-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      yii2-unit-test
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><p><a target="_blank" rel="noopener" href="https://codeception.com/for/yii">文档</a></p>
+<p>在项目目录执行</p>
+<h3 id="生成测试"><a href="#生成测试" class="headerlink" title="生成测试"></a>生成测试</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vendor/bin/codecept generate:test unit models/KnowledgeModelTest -c frontend</span><br></pre></td></tr></table></figure>
+
+<h3 id="执行测试"><a href="#执行测试" class="headerlink" title="执行测试"></a>执行测试</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vendor/bin/codecept run unit models/KnowledgeModelTest -c frontend</span><br><span class="line">vendor/bin/codecept run unit models/KnowledgeModelTest:testSave -c frontend //具体方法</span><br></pre></td></tr></table></figure>
+
+<h3 id="fixture-生成测试数据"><a href="#fixture-生成测试数据" class="headerlink" title="fixture 生成测试数据"></a>fixture 生成测试数据</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">1、新建template </span><br><span class="line">路径：common/fixtures/templates/QaKnowledgeModels.php</span><br><span class="line">&lt;?php</span><br><span class="line">$faker = \Faker\Factory::create();</span><br><span class="line">return [</span><br><span class="line">    &#x27;title&#x27;=&gt; $faker-&gt;name,</span><br><span class="line">    &#x27;product_id&#x27; =&gt; 1,</span><br><span class="line">    &#x27;forth_status&#x27; =&gt; rand(1,2),</span><br><span class="line">    &#x27;created_at&#x27;=&gt;time(),</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">2、配置修改</span><br><span class="line">console/config/main.php</span><br><span class="line"> &#x27;controllerMap&#x27; =&gt; [</span><br><span class="line">        &#x27;fixture&#x27; =&gt; [</span><br><span class="line">           // &#x27;class&#x27; =&gt; &#x27;yii\console\controllers\FixtureController&#x27;,</span><br><span class="line">            &#x27;class&#x27; =&gt; &#x27;yii\faker\FixtureController&#x27;,</span><br><span class="line">            &#x27;namespace&#x27; =&gt; &#x27;common\fixtures&#x27;,</span><br><span class="line">            &#x27;templatePath&#x27; =&gt; &#x27;@common/fixtures/templates&#x27;,</span><br><span class="line">            &#x27;fixtureDataPath&#x27; =&gt; &#x27;@common/fixtures/data&#x27;,</span><br><span class="line">          ],</span><br><span class="line">    ],</span><br><span class="line"></span><br><span class="line">3.执行命令</span><br><span class="line">php yii fixture/generate QaKnowledgeModels --count=10</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h3><p><a target="_blank" rel="noopener" href="https://phpunit.de/manual/6.5/en/appendixes.assertions.html">PHPUnit</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$this-&gt;assertEquals()</span><br><span class="line">$this-&gt;assertContains()</span><br><span class="line">$this-&gt;assertFalse()</span><br><span class="line">$this-&gt;assertTrue()</span><br><span class="line">$this-&gt;assertNull()</span><br><span class="line">$this-&gt;assertEmpty()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chen152009.github.io/2022/04/08/yii2-unit-test/" data-id="cl1q6szlb000174ui4fax3wfm" data-title="yii2-unit-test" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Yii2/" rel="tag">Yii2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/phpUnit/" rel="tag">phpUnit</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/04/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Yii2/" rel="tag">Yii2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/phpUnit/" rel="tag">phpUnit</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Yii2/" style="font-size: 10px;">Yii2</a> <a href="/tags/phpUnit/" style="font-size: 10px;">phpUnit</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/08/yii2-unit-test/">yii2-unit-test</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 lgf<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
